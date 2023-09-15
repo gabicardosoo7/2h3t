@@ -1,1 +1,0 @@
-clicado = () => alert("Alo mundo");
