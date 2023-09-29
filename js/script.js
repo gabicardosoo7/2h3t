@@ -1,7 +1,10 @@
-clicado = () => alert("Alô mundo");
+let num1 = "";
+let num2 = "";
+let valor = "";
+let temPonto = "";
 mensagem = (msg) => console.log(msg)
 soma = (a,b) => a + b;
-sub = (a,b) => a - b;
+sub = (a,b) => a - b;       
 mult = (a,b) => a * b;
 div = (a,b) => a / b;
 juros_simples = (j,c) => mult(c,div(j,100));
@@ -22,3 +25,20 @@ mensagem(mult(420,div(18,100)));
 mensagem(juros_simples(420,18));
 
 mensagem(montante_juro_simples(420,18));
+
+mostrar_display = (msg)=>{
+    document.getElementById("resultado").value = msg;
+}
+
+function digitando(tecla){
+    if(tecla == "."){
+        if(!temPonto){
+            valor += tecla;
+            mostrar_display(valor);
+            temPonto = true;
+        }
+        return;
+    }
+   valor += tecla;
+   mostrar_display(valor);
+}
