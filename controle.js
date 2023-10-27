@@ -40,4 +40,24 @@ const inserir_ultimo = () => {
         atualiza_lista();
     } 
 }
+const limpar_todos = () => {
+    lista = [];
+        atualiza_lista();
+}
     
+const ordenar_az = () => {
+    lista.sort();
+        atualiza_lista();
+}
+const ordenar_za = () => {
+    lista.sort();
+    lista.reverse();
+        atualiza_lista();
+}
+const deletar_nome = () => {
+    for(let i = 0; i<lista.length;i++){
+        if(nome==lista[i]){
+            lista.splice(i,i);
+        }
+    }
+}
