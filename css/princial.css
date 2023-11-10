@@ -23,3 +23,8 @@ button {
 #igual{
     padding: 20px;
 }
+.entrada {
+    width: 36px;
+    border: none;
+    border-bottom: 2px solid lightskyblue;
+}
